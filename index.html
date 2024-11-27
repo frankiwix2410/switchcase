@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicios Grupo de estudio</h1>
+    </header>
+    <div class="contenedor">
+        <div class="ejercicio">
+            <h3>Ejercicio 1: Clasificacion por Edad</h3>
+            <form onsubmit="verificarEdad(event)">
+                <input type="number" id="edad" placeholder="Ingrese su edad:">
+                <button type="submit">Validar</button>
+            </form>
+            <p id="mensajeEdad"></p>
+        </div>
+
+        <div class="ejercicio">
+            <h3>Ejercicio 2: Convertidor de mes a Estacion del año</h3>
+            <form onsubmit="verificar(event)">
+                <input type="text" id="mes" placeholder="Ingrese el mes:">
+                <button type="submit">Validar</button>
+            </form>
+            <p id="mensajeMes"></p>
+        </div>
+
+
+        <div class="ejercicio">
+            <h3>Ejercicio 3: Identificador de tipo de animal</h3>
+            <form onsubmit="ClaseAnimal(event)">
+                <input type="text" id="animal" placeholder="Ingrese el animal">
+                <button type="submit">Validar</button>
+            </form>
+            <p id="mensajeAnimal"></p>
+        </div>
+
+
+        <div class="ejercicio">
+            <h3>Ejercicio 4: Niveles de Menbresia</h3>
+            <form onsubmit="Menbresia(event)">
+                <label id="tipoMembresia" for="text">Bronce, Plata, Oro, Platino</label>
+                <input type="text" id="menbresia" placeholder="Ingrese su tipo de menbresia">
+                <button type="submit">Validar</button>
+            </form>
+            <p id="mensajeMenbresia"></p>
+        </div>
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>
